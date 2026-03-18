@@ -137,3 +137,15 @@ li {
     padding: 22px;
   }
 }
+.footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 24px 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
