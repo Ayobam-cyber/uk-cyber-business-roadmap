@@ -1,3 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #0f172a;
+  color: white;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
 * {
   box-sizing: border-box;
 }
@@ -83,6 +118,15 @@ li {
 @media (max-width: 768px) {
   .hero {
     padding: 70px 20px;
+  }
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    margin: 8px 12px 0 0;
   }
 
   .hero h1 {
