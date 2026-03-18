@@ -173,3 +173,17 @@ li {
 .service-card p {
   margin-bottom: 0;
 }
+.btn-small {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 14px;
+  background: #1d4ed8;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.btn-small:hover {
+  background: #1e40af;
+}
