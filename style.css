@@ -237,3 +237,29 @@ li {
 .contact-alt {
   margin-top: 20px;
 }
+/* Trust / Tools Section */
+.trust {
+  margin: 40px 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.trust-item {
+  background: #f4f6f8;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
