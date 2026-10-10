@@ -346,3 +346,20 @@ li {
     transform: none;
   }
 }
+
+/* LCS Scroll Reveal Animation */
+
+@media (prefers-reduced-motion: no-preference) {
+  main > section.reveal-ready {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+  }
+
+  main > section.reveal-ready.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
