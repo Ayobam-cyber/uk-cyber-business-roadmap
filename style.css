@@ -263,3 +263,86 @@ li {
   font-size: 0.9rem;
   font-weight: 500;
 }
+
+/* LCS - How We Work Section */
+
+#how-we-work {
+  padding: 60px 40px;
+}
+
+#how-we-work h2 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.process-card {
+  background: #f8faff;
+  padding: 28px 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.12);
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.process-card h3 {
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.process-card p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+  .process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  #how-we-work {
+    padding: 35px 18px;
+  }
+
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .process-card {
+    transition: none;
+  }
+
+  .process-card:hover {
+    transform: none;
+  }
+}
