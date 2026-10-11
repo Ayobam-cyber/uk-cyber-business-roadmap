@@ -266,11 +266,19 @@ document.addEventListener("DOMContentLoaded", () => {
     threshold: 0.08
   });
 
-  sections.forEach((section) => {
-    section.classList.add("reveal-ready");
-    observer.observe(section);
+  
+sections.forEach((section) => {
+  section.classList.add("reveal-ready");
+});
+
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
   });
 });
+
 </script>
 
 </body>
